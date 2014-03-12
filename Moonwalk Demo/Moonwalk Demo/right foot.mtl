@@ -1,0 +1,20 @@
+# Blender MTL File: 'astronaut.blend'
+# Material Count: 2
+
+newmtl MKIII:MarkIII_8sizedwithoutskeleton_lambert3SG
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.108800 0.108800 0.108800
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 0.000000
+illum 2
+
+newmtl MKIII:MarkIII_8sizedwithoutskeleton_lambert4SG
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.275200 0.275200 0.275200
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 0.000000
+illum 2

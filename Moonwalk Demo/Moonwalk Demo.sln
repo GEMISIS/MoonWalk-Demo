@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Moonwalk Demo", "Moonwalk Demo\Moonwalk Demo.vcxproj", "{BB35CE7D-234A-476C-9932-9ED8C2E8B348}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Game Library", "Game Library\Game Library.vcxproj", "{7E91F294-6185-4148-BDE1-87A29CE33237}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB35CE7D-234A-476C-9932-9ED8C2E8B348}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BB35CE7D-234A-476C-9932-9ED8C2E8B348}.Debug|Win32.Build.0 = Debug|Win32
+		{BB35CE7D-234A-476C-9932-9ED8C2E8B348}.Release|Win32.ActiveCfg = Release|Win32
+		{BB35CE7D-234A-476C-9932-9ED8C2E8B348}.Release|Win32.Build.0 = Release|Win32
+		{7E91F294-6185-4148-BDE1-87A29CE33237}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7E91F294-6185-4148-BDE1-87A29CE33237}.Debug|Win32.Build.0 = Debug|Win32
+		{7E91F294-6185-4148-BDE1-87A29CE33237}.Release|Win32.ActiveCfg = Release|Win32
+		{7E91F294-6185-4148-BDE1-87A29CE33237}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

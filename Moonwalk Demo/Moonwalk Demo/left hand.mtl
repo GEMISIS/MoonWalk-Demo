@@ -1,0 +1,11 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl MKIII:MarkIII_8sizedwithoutskeleton_hand_lambert2SG
+Ns 80.392157
+Ka 0.000000 0.000000 0.000000
+Kd 0.214958 0.217579 0.235930
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 0.000000
+illum 2
