@@ -85,6 +85,18 @@ void camera_t::InitializeOculusRift()
 			}
 		}
 	}
+	else
+	{
+		this->riftHMD.HResolution = 1280;
+		this->riftHMD.VResolution = 800;
+		this->riftHMD.HScreenSize = 0.14976f;
+		this->riftHMD.VScreenSize = 0.0936f;
+		this->riftHMD.VScreenCenter = this->riftHMD.VScreenSize / 2;
+		this->riftHMD.EyeToScreenDistance = 0.041f;
+		this->riftHMD.LensSeparationDistance = 0.0635f;
+		this->riftHMD.InterpupillaryDistance = 0.064f;
+		this->hasOculusRift = true;
+	}
 }
 
 void camera_t::SetupOculusRift()
@@ -124,20 +136,20 @@ void camera_t::SetupOculusRift()
 void camera_t::UpdateOculusRiftData()
 {
 	this->sensorFusion->GetOrientation().GetEulerAngles<Axis_Y, Axis_X, Axis_Z>
-									(&this->OculusRiftOrientation.yaw,
-									 &this->OculusRiftOrientation.pitch,
-									 &this->OculusRiftOrientation.roll);
+		(&this->OculusRiftOrientation.yaw,
+		&this->OculusRiftOrientation.pitch,
+		&this->OculusRiftOrientation.roll);
 
 	this->OculusRiftOrientation.yaw = RadToDegree(this->OculusRiftOrientation.yaw);
 	this->OculusRiftOrientation.pitch = RadToDegree(this->OculusRiftOrientation.pitch);
 	this->OculusRiftOrientation.roll = RadToDegree(this->OculusRiftOrientation.roll);
 
 	this->Rotation.x -= (this->OculusRiftOrientation.pitch -
-										this->PreviousOculusRiftOrientation.pitch);
+		this->PreviousOculusRiftOrientation.pitch);
 	this->Rotation.y -= (this->OculusRiftOrientation.yaw -
-										this->PreviousOculusRiftOrientation.yaw);
+		this->PreviousOculusRiftOrientation.yaw);
 	this->Rotation.z -= (this->OculusRiftOrientation.roll -
-										this->PreviousOculusRiftOrientation.roll);
+		this->PreviousOculusRiftOrientation.roll);
 
 	this->PreviousOculusRiftOrientation.yaw = this->OculusRiftOrientation.yaw;
 	this->PreviousOculusRiftOrientation.pitch = this->OculusRiftOrientation.pitch;

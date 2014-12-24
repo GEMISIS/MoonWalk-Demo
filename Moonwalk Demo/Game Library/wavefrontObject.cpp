@@ -7,6 +7,7 @@
 void wavefrontObject::loadGraphics(const char* fileName)
 {
 	FILE* file = fopen(fileName, "rb");
+	if(file == NULL) return;
 
 	char lineHeader[256];
 	int res = 0;

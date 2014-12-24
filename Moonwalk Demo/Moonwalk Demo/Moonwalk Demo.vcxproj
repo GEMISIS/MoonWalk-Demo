@@ -39,7 +39,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Program Files\Microsoft SDKs\Kinect\v1.8\inc;C:\Users\GEMISIS\Documents\Visual Studio 2010\Projects\The Coliseum\Game Library;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Program Files\Microsoft SDKs\Kinect\v1.8\inc;../Game Library;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Program Files\Microsoft SDKs\Kinect\v1.8\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

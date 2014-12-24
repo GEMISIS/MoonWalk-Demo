@@ -139,7 +139,7 @@ void main_game_state::updateUniforms(RiftEye eye)
 		}
 		glUniform4f(u_distortion, this->camera.riftHMD.DistortionK[0], this->camera.riftHMD.DistortionK[1], this->camera.riftHMD.DistortionK[2], this->camera.riftHMD.DistortionK[3]);
 		glUniform1f(u_aspect, this->camera.AspectRatio);
-		glUniform1f(u_fillScale, 1.0f);
+		glUniform1f(u_fillScale, this->camera.StereoConfiguration.GetDistortionScale());
 	}
 }
 
@@ -179,9 +179,9 @@ void main_game_state::updateFrameBuffer()
 		glMatrixMode(GL_MODELVIEW);
 		glLoadIdentity();
 
-		glMatrixMode(GL_PROJECTION);
 		glPushMatrix();
 		{
+			glMatrixMode(GL_PROJECTION);
 			glLoadIdentity();
 			gluOrtho2D(0.0f, 1.0f, 0.0f, 1.0f);
 			glMatrixMode(GL_MODELVIEW);
